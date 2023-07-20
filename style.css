@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.nav, .banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    margin: 2rem 12rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+
+
+}
+p{
+    color: #3C354F;
+    font-size: .9rem;
+
+}
+.nav-des, .nav-title, .nav-des-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.nav-des-icon{
+    background: rgba(11, 2, 35, 0.10);
+    border-radius: .5rem;
+    padding: .4rem .7rem;
+}
+/* Main Section */
+.banner{
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+    padding: 2rem 8rem;
+}
+.banner-title > p{
+    margin-bottom: .8rem;
+}
+.banner-title :nth-child(1){
+    color:#000;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner-title :nth-child(2){
+    color: rgb(190, 81, 213);
+    font-size: 5rem;
+    font-weight: 800;
+}
+.banner-title{
+    padding: 4rem;
+}
+.btn{
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 0;
+    color: white;
+    background: #F948B2;
+    width: 7rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.go-rogue{
+    background: #4EC5F7;
+    width: 8rem;
+    margin-left: .8rem;
+}
+/* card section */
+.card-main{
+    text-align: center;
+}
+.card-main>h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.card-main>p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card-all-imgs{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 11rem;
+    
+}
+.card{
+    position: relative;
+}
+.card>p{
+    margin-top: .9rem;
+    text-align: left;
+}
+.card-img{
+    width: 100%;
+    height: 360px;
+}
+.card-hover{
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 87%;
+    border-radius: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgb(230,80,180);
+    opacity: .5;
+    visibility: hidden;
+    transition: .7s;
+}
+.card-hover>a{
+    color: rgb(255,255,255);
+    font-size: 2.5rem;
+
+}
+.card-hover>p{
+    font-size: 1.5rem;
+    color: rgb(230,80,160);
+    font-weight: 500;
+
+}
+
+.card:hover > .card-hover{
+    visibility: visible;
+    opacity: 0.7;
+    /* cursor: pointer; */
+}
+/* Play Game Section */
+.play-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 12rem;
+}
+.play-game-img{
+    width: 100%;
+}
+.big{
+    width: 100%;
+}
+.small{
+    width: 15%;
+    translate: -6.5rem 15rem;
+    position: absolute;
+}
+.play-game-content{
+    margin-left: 13rem;
+}
+.play-game-content>h3{
+    font-size: 3rem;
+}
+/* game catagory section */
+.game-catagory{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    margin-top: 4.5rem;
+    height: 450px;
+    padding: 10rem 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.catagory{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3rem;
+    background: #fff;
+    width: fit-content;
+    height: 5rem;
+    padding: 1rem;
+    transition: .5s;
+}
+.catagory>p{
+    font-size: .8rem;
+    font-weight: 600;
+    color: #0B0223;
+    margin-left: .5rem;
+}
+.catagory:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+    cursor: pointer;
+}
+.catagory:hover p{
+    color: #F948B2;
+
+}
+/* Footer Section */
+footer{
+    height: 600px;
+    background: #0B0223;
+    padding: 7rem 25rem;
+
+}
+.footer, .footer-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer > a{
+    color: #fff;
+    margin: 1rem;
+    font-size: 2rem;
+
+}
+.footer-des a{
+    color: white;
+    margin: 1rem;
+    font-size: .9rem;
+    text-align: center;
+    font-weight: 600;
+}
+.icons a{
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.terms a{
+    font-weight: 400;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+footer p{
+    margin: 1rem 8rem;
+    color: rgb(157, 154, 167);
+}
