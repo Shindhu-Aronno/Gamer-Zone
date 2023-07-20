@@ -243,7 +243,14 @@ footer p{
     color: rgb(157, 154, 167);
 }
 
-/* responsive */
+
+
+
+
+/* responsive section */
+
+/* small device */
+
 @media screen and (max-width:600px){ /* 600px ref from w3 school breakpoint */
     .nav, .banner{
     flex-direction: column;
@@ -338,3 +345,80 @@ footer>p{
 }
 
 }
+
+/* midium device */
+@media screen and (min-width:600px) and (max-width:992px){
+    .nav{
+        margin: 1rem 5rem;
+        padding: .8rem;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+    .banner-title{
+        padding: .5rem;
+        margin-bottom: 2rem;
+    }
+    .card-main>h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .card-main{
+        margin: 2rem 0;
+    }
+    .card-main>p{
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+    .card-all-imgs, .play-game, .play-game-content{
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 2rem;
+    }    
+    .card{
+        width: 80%;
+    }
+    .card>p{
+        text-align: center;
+        font-size: .8rem;
+        margin-bottom: 1rem;
+    }
+    .play-game-img {
+        width: 125%;
+    }
+    .play-game-content{
+        margin-left: 3rem;
+    }
+    .play-game-content>h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .game-catagory{
+        margin: 0;
+        padding: 0;
+    }
+    .catagory{
+            width: 16%;
+            flex-wrap: wrap;
+            padding: 0px;
+            height: 12rem;
+        }
+        .catagory>img{
+            width: 80%;
+        }
+        footer{
+            height: 450px;
+            padding: 3rem 7rem;
+        }
+        .footer>img{
+            width: 17%;
+        }
+        footer p {
+            margin: 1rem 12rem;
+        }
+    }
+
